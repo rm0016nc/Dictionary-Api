@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/plain">
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/plain"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_a_word"
+        android:selectAllOnFocus="true"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/requestApiButtonClick"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/wordDef"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_toEndOf="@+id/e1"
+        android:layout_toRightOf="@+id/e1"
+        android:background="@color/gray"
+        android:onClick="requestApiButtonClick"
+        android:text="@string/search"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:id="@+id/wordDef"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/trackBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="489dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="@string/oline_dict"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/twentysp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/trackBtn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/e1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="315dp"
+        android:background="@color/gray"
+        android:text="@string/frequently_searched"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/wod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="208dp" />
+
+    <Button
+        android:id="@+id/favBtn"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:background="@color/colorAccent"
+        android:text="@string/add_to_favorite_list"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/dict" />
+
+    <Button
+        android:id="@+id/savedBtn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/trackBtn"
+        android:layout_alignStart="@+id/e1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/gray"
+        android:text="@string/my_favorite_words"
+        android:textColor="@android:color/background_light" />
+
+    <ToggleButton
+        android:id="@+id/clear"
+        android:layout_width="60dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/e1"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/wordDef"
+        android:background="@color/gray"
+        android:text="@string/togglebutton"
+        android:textColor="@android:color/background_light"
+        android:textOff="@string/erase"
+        android:textOn="@string/clear" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp" />
+
+
+
+
+</RelativeLayout>
